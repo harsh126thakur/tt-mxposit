@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-# cocotb test for tt_um_mxposit - drives the byte protocol the way the RP2040 would.
+# cocotb test for tt_um_harshrajthakur_mxposit - drives the byte protocol the way the RP2040 would.
 import os
 import cocotb
 from cocotb.clock import Clock

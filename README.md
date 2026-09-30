@@ -9,13 +9,13 @@ FP16 A, B → shared block exponent (OCP-MX "max" rule, block of 4) → posit<8,
 The FP16 result is exact for normal results, rounds to nearest-even into subnormals, and overflows to ±Inf.
 
 - Datasheet, pinout and protocol: [docs/info.md](docs/info.md)
-- Top module: `tt_um_mxposit`, 1x2 tiles, 50 MHz, two pipeline stages
+- Top module: `tt_um_harshrajthakur_mxposit`, 1x2 tiles, 50 MHz, two pipeline stages
 
 ## Source files
 
 | File | What it is |
 |---|---|
-| `src/tt_um_mxposit.v` | Top: 16-byte input store, 2 block-exponent units, 1 pipelined lane, byte-wide read-out |
+| `src/tt_um_harshrajthakur_mxposit.v` | Top: 16-byte input store, 2 block-exponent units, 1 pipelined lane, byte-wide read-out |
 | `src/mxp_blockexp.v` | Shared block exponent s = floor(log2 max\|x\|) over 4 elements |
 | `src/fp16_split.v` | Unpacks FP16 into sign, zero, Inf/NaN, floor(log2) and normalised fraction (handles subnormals) |
 | `src/mxp8_enc.v` | Block-scaled value → posit8 code with RNE; decodes back to (scale, fraction) |

@@ -1,5 +1,5 @@
 // ============================================================================
-// tt_um_mxposit : Tiny Tapeout top - block of 4 FP16 pairs, one shared lane
+// tt_um_harshrajthakur_mxposit : Tiny Tapeout top - block of 4 FP16 pairs, one shared lane
 //                 PIPELINED version (2 register stages in the datapath)
 //
 //  ui_in[7:0]   data byte in
@@ -25,7 +25,7 @@
 //  protocol (strobes >= 3 clocks high and low, synchronised on-chip) leaves more
 //  time than that, so the pin interface is unchanged.
 // ============================================================================
-module tt_um_mxposit (
+module tt_um_harshrajthakur_mxposit (
     input  wire [7:0] ui_in,
     output wire [7:0] uo_out,
     input  wire [7:0] uio_in,

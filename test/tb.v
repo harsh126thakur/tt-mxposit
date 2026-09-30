@@ -21,7 +21,7 @@ module tb ();
   wire VGND = 1'b0;
 `endif
 
-  tt_um_mxposit user_project (
+  tt_um_harshrajthakur_mxposit user_project (
 `ifdef GL_TEST
       .VPWR(VPWR),
       .VGND(VGND),
